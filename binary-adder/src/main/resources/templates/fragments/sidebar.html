@@ -5,7 +5,7 @@
   <aside class="sidebar" th:fragment="side-bar-fragment">
     <!-- Sidebar header -->
     <header class="sidebar-header">
-      <a href="#" class="header-logo">
+      <a th:href="@{/home}" class="header-logo">
         <img th:src="@{/images/logo.png}" alt="logo_image">
       </a>
       <button class="toggler sidebar-toggler">
@@ -19,35 +19,35 @@
       <!-- Primary top nav -->
       <ul class="nav-list primary-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/handbook}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">menu_book</span>
             <span class="nav-label">Hand Book</span>
           </a>
           <span class="nav-tooltip">Hand Book</span>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/circuit}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">memory</span>
             <span class="nav-label">Circuit</span>
           </a>
           <span class="nav-tooltip">Circuit</span>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/logic}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">schema</span>
             <span class="nav-label">Logic</span>
           </a>
           <span class="nav-tooltip">Logic</span>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/about}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">info</span>
             <span class="nav-label">About</span>
           </a>
           <span class="nav-tooltip">About</span>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/settings}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">settings</span>
             <span class="nav-label">Settings</span>
           </a>
@@ -57,14 +57,14 @@
       <!-- Secondary bottom nav -->
       <ul class="nav-list secondary-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/profile}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">account_circle</span>
             <span class="nav-label">Profile</span>
           </a>
           <span class="nav-tooltip">Profile</span>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a th:href="@{/logout}" class="nav-link">
             <span class="nav-icon material-symbols-rounded">logout</span>
             <span class="nav-label">Logout</span>
           </a>

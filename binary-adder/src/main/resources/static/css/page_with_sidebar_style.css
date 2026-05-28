@@ -1,0 +1,15 @@
+/* --- Estilos do Conteúdo Principal --- */
+.main-content {
+  /* Empurra o conteúdo para a direita: 270px (largura da sidebar) + 16px (margem esquerda) + 20px (respiro) */
+  margin-left: 306px;
+  padding: 20px;
+  /* A mesma transição da sidebar para a animação ficar sincronizada */
+  transition: all 0.4s ease; 
+}
+
+/* O "Pulo do Gato": Seletor de irmãos (~) */
+/* Quando a sidebar estiver com a classe .collapsed, o main-content que for irmão dela ganha essa nova margem */
+.sidebar.collapsed ~ .main-content {
+  /* 85px (largura da sidebar recolhida) + 16px (margem) + 20px (respiro) */
+  margin-left: 121px; 
+}

@@ -13,4 +13,29 @@ public record HomeController() {
         return "home";
     }
 
+    @GetMapping("/handbook")
+    public String handbook (){
+        return "handbook";
+    }
+
+    @GetMapping("/settings")
+    public String settings (){
+        return "settings";
+    }
+
+    @GetMapping("/circuit")
+    public String circuit (){
+        return "circuit";
+    }
+
+    @GetMapping("/logic")
+    public String logic (){
+        return "logic";
+    }
+
+    @GetMapping("/about")
+    public String about (){
+        return "about";
+    }
+
 }

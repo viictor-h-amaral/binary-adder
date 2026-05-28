@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu | CodingNepal</title>
+  <link rel="stylesheet" th:href="@{/css/page_with_sidebar_style.css}">
+  <link rel="stylesheet" th:href="@{/css/side_bar.css}">
+  <!-- Linking Google fonts for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div th:replace="fragments/sidebar :: side-bar-fragment"></div>
+        <!-- Main content -->
+        <main class="main-content">
+        <h1>About</h1>
+        <br>
+        <p>Welcome to the about section of the Binary Adder application ℹ️!</p>
+        <br>
+        <p>Here you can learn more about the application, its features, and the team behind it! 🧩</p>
+        <br>
+        <p>Feel free to explore the about section and see how the different components interact to perform binary addition! 🚀</p>
+        </main>
+    <!-- Script -->
+    <script th:src="@{/js/side_bar.js}"></script>
+</body>
+</html>
