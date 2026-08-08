@@ -68,14 +68,15 @@ Here is how the current behaves dynamically across the four entry combinations:
 
 ---
 
-### 2.3. Bill of Materials (BOM) 🛒
+### 2.3. Bill of Materials 🛒
 
 Each individual AND operator module requires the following discrete components:
 
 * **3x** $22\text{k }\Omega$ ($1/4\text{W}$) Carbon Film Resistors
 * **2x** $330\text{ }\Omega$ ($1/4\text{W}$) Carbon Film Resistors
 * **3x** BC-548 NPN Bipolar Junction Transistors (BJTs)
-* **Power Requirements:** Dual $9\text{V}$ Input Rails + Dedicated $9\text{V}$ VCC Source
+* **2x** Switches 
+* **1x** $9\text{V}$ VCC Source
 
 ---
 
@@ -83,6 +84,6 @@ Each individual AND operator module requires the following discrete components:
 
 > 💡 *Note: Transitioning from a temporary breadboard layout to a permanent soldered PCB ensures minimal contact resistance and long-term circuit stability.*
 
-| Component Layout (Top View) | Solder Traces (Bottom View) |
+| Top View | Bottom View |
 | :---: | :---: |
 | ![View 1](../../../static/images/handbook/assembled_logic_circuits/AND/view_1.jpg) | ![View 2](../../../static/images/handbook/assembled_logic_circuits/AND/view_2.jpg) |
